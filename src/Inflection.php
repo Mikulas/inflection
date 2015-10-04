@@ -649,7 +649,6 @@ class Inflection
 		$matches = [];
 		if (preg_match('/' . substr($pattern, 1) . '$/iu', $word, $matches))
 		{
-			var_dumP($pattern);
 			for ($i = count($matches) - 1; $i > 0; $i--)
 			{
 				$this->replacements[$i - 1] = $matches[count($matches) - $i];
